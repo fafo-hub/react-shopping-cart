@@ -34,7 +34,7 @@ const data = {
             },
             {
             id: 5,
-            title: "My First 1000 Words",
+            title: "Macbook 2022 Air",
             author: "by Wonder House Books | 1 January 2018",
             price: 149,
             img: "https://m.media-amazon.com/images/I/71O-FI7QApL._AC_UY327_FMwebp_QL65_.jpg",

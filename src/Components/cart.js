@@ -19,7 +19,7 @@ const cart = ({cartItems, AddToCart, RemoveFromCart}) => {
           <span onClick={closeCart} className="close-cart">
             <i className="fas fa-window-close"></i>
           </span>
-          <h2>Your Cart</h2>
+          <h2 className='your-cart'>Your Cart</h2>
           <div className="items-purchased">
             <div className="empty-cart">
               {cartItems.length === 0 && <div>Cart is Empty</div>}
