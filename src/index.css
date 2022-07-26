@@ -213,36 +213,50 @@ img .d-block .w-100 .carousel-img {
     border-radius: 5px;
     padding: 10px 10px 10px 10px;
     margin-bottom: 5px;
+    height: 120px;
 }
 .cart-item img {
   width: 80px;
+  height: 101px;
 }
 .price-name {
     height: 97px;
     display: grid;
-    grid-gap: 47px;
+    grid-gap: 61px;
     text-align: center;
 }
 .price-name h2{
-  font-size: 20px;
+  font-size: 11px;
   text-decoration: none;
   font-weight: 500;
 }
 .add-subtract {
-    height: 97px;
+    height: fit-content;
     display: grid;
     position: relative;
-    top: -9px;
+    /* top: -17px; */
     justify-content: end;
     grid-template-rows: repeat(3,1fr);
     position: relative;
 }
-.add-subtract h3, .add-subtract h2 {
-  padding-left: 3px!important;
+.add-subtract h3{
+  height: 35px;
+  width: 30px;
+  padding: 5px 0px 0px 9px!important;
+  border-radius: 5px;
+  font-size: calc(1.225rem + .1vw)!important;
+  background: rgb(231, 226, 221);
 }
 
-.remove, .add {
+.remove, .add{
   cursor: pointer;
+  background: rgb(231, 226, 221);
+  font-size: calc(1.225rem + .5vw)!important;
+  padding: 0 0 0 9px!important;
+  border-radius: 5px;
+}
+.add {
+  padding: 0 0 0 6px!important;
 }
 
 .footer {
@@ -263,16 +277,61 @@ img .d-block .w-100 .carousel-img {
   justify-content: center;
 }
 
-
+.remove{
+  width: 30px;
+  height: 30px!important;
+  border-radius: 3px;
+  font-size: calc(1.225rem + .4vw)!important;
+}
+.add {
+  font-size: calc(1.125rem + .3vw)!important;
+  padding: 0 0 2px 7px!important;
+  border-radius: 3px;
+}
+.add-subtract h3 {
+  height: 30px;
+  font-size: calc(1.125rem + .1vw)!important;
+  padding: 3px 0 3px 10px!important;
+}
 @media screen and (max-width: 900px) {
+  .cart-item {
+    height: 120px;
+  }
 	.add-subtract {
-		top: -10px;
-    grid-gap: 1px;
+    height: 109px;
+    top: -3px!important;
   }
   .price-name {
     grid-gap: 40px;
   }
   .cart-item img {
     height: 100px;
+  }
+  .price-name {
+    grid-gap: 40px!important;
+  }
+  .price-name h2 {
+    font-size: 13px!important;
+  }
+  .remove{
+    width: 30px;
+    height: 30px!important;
+    border-radius: 3px;
+    font-size: calc(1.225rem + .4vw)!important;
+  }
+  .add {
+    font-size: calc(1.125rem + .3vw)!important;
+    padding: 0 0 2px 7px!important;
+    border-radius: 3px;
+  }
+  .add-subtract h3 {
+    height: 30px;
+    font-size: calc(1.125rem + .1vw)!important;
+    padding: 3px 0 3px 10px!important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .price-name {
+    grid-gap: 58px!important;
   }
 }

@@ -29,7 +29,6 @@ const cart = ({cartItems, AddToCart, RemoveFromCart}) => {
             <img src={item.img} alt="item" />
             <div className="price-name">
               <h2>{item.title}</h2>
-              
               <h2>${item.price}</h2>
             </div>
             <div className="add-subtract">
