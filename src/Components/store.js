@@ -7,7 +7,7 @@ const store = ({products, AddToCart}) => {
     //console.log(products);
     return ( 
         <Container fluid>
-            <Row className='row'>
+            <Row className='row product-row'>
                 {products.map((product) =>(
                 <Product key ={product.id} product={product} AddToCart={AddToCart} />
                 ) )}

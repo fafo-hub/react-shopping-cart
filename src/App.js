@@ -6,6 +6,7 @@ import Cart from "./Components/cart"
 import Store from "./Components/store"
 import data from "./Components/data"
 import { useState } from 'react';
+import Payment from "./Components/payment"
 
 
 
@@ -39,13 +40,15 @@ const App = () => {
     }
     
   };
+
   return ( 
     <div className="div">
       <Navbars cartItems={cartItems}/>
       <Carousel />
       <Cart cartItems={cartItems} AddToCart={AddToCart} RemoveFromCart={RemoveFromCart}/>
       <Store products = { products } AddToCart={AddToCart} />
-    </div>
+      <Payment />
+        </div>
    );
 }
  

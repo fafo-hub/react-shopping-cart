@@ -1,12 +1,17 @@
 import React from 'react';
+import Payment from "./payment"
 
 
 const closeCart = (e) => {
     document.querySelector('.cart-overlay').style.visibility = 'hidden'
     document.querySelector('.cart').style.transform = 'translateX(101%)'
   }
+  // const checkOutFormDiv = (a) => {
+  //   document.querySelector('.checkout-container').style.visibility = 'visible'
+  //   console.log('seen');
+  // }
 
-const cart = ({cartItems, AddToCart, RemoveFromCart}) => {
+const cart = ({cartItems, AddToCart, RemoveFromCart, componentProps}) => {
   //console.log(cartItems);
   const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
   const taxPrice = itemsPrice * 0.14;
@@ -17,7 +22,7 @@ const cart = ({cartItems, AddToCart, RemoveFromCart}) => {
         <div className="cart-overlay">
         <div className="cart">
           <span onClick={closeCart} className="close-cart">
-            <i className="fas fa-window-close"></i>
+            <i className="fa-solid fa-window-close fa-1x"></i>
           </span>
           <h2 className='your-cart'>Your Cart</h2>
           <div className="items-purchased">
@@ -73,11 +78,15 @@ const cart = ({cartItems, AddToCart, RemoveFromCart}) => {
               </div>
             </div>
             <hr />
+            <span className='proceed'>Kindly input your details to proceed</span><br/>
+            <hr className='proceed-hr'/>
             <div className="checkout">
-              <button className='checkout-btn' onClick={() => alert('Implement Checkout!')}>
+              {/* <button className='checkout-btn'>
                 Checkout
-              </button>
+              </button> */}
             </div>
+            <Payment totalPrice={totalPrice}/>
+            
           </>
         )}
           </div>
@@ -85,6 +94,7 @@ const cart = ({cartItems, AddToCart, RemoveFromCart}) => {
       </div>
       
     </div>
+    
      );
 }
  
