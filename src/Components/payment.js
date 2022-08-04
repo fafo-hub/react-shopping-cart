@@ -2,15 +2,9 @@ import React from 'react';
 import { useState } from 'react';
 import { PaystackButton } from "react-paystack"
 
-// const checkOutFormDiv = () => {
-//     // document.querySelector('.checkout-container').style.visibility = 'visible'
-//     console.log('seen');
-//   }
 
 const Payment = ({totalPrice}) => {
-    console.log(parseInt(totalPrice));
     let totalPriceInKobo = (parseInt(totalPrice) * 500) * 100
-    console.log(totalPriceInKobo);
     const publicKey = "pk_test_7340a62b2cbcd7182c887b72a5d0d06c5abcae10"
     const amount = totalPriceInKobo
     const [email, setEmail] = useState("")

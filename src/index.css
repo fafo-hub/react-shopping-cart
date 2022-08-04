@@ -15,6 +15,10 @@ code {
 
 /* Navbar */
 
+.nav-container {
+  background-color: rgba(0, 0, 0, 1)!important;
+}
+
 .navbar_container .navbar_a {
   order: 2;
 }
@@ -25,7 +29,7 @@ img .d-block .w-100 .carousel-img {
 }
 
 .carousel-item {
-  background: url('./Components/Images/pexels-karolina-grabowska-4968391.jpg');
+  background: url('./Components/Images/th.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -48,6 +52,16 @@ img .d-block .w-100 .carousel-img {
   height: 65vh;
 }
 
+.nav-links {
+  color: gold!important;
+} 
+
+/*  Carousel */
+.carousels h3, p {
+  font-family: monospace;
+  color: gold;
+  font-weight: 800;
+}
 /* Products Section */
 
 .container-fluid {
@@ -66,9 +80,9 @@ img .d-block .w-100 .carousel-img {
 }
 
 .card img {
-  width: 70%;
-  height: 112px;
-  padding-top: 15px;
+  width: 90%!important;
+  height: 120px!important; 
+  /* padding-top: 15px; */
   /* margin-bottom: 3px; */
 }
 
@@ -209,7 +223,7 @@ img .d-block .w-100 .carousel-img {
     grid-template-rows: auto auto auto;
     padding-bottom: 20px;
     /*  */
-    background: azure;
+    background: lightgrey;
     border-radius: 5px;
     padding: 10px 10px 10px 10px;
     margin-bottom: 5px;
@@ -361,4 +375,62 @@ img .d-block .w-100 .carousel-img {
 }
 .proceed-hr {
   width: 116px;
+}
+
+/* Countdown */
+.countdown-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 72%;
+  margin: auto;
+  font-size: 30px;
+  font-style: italic;
+  justify-items: center;
+  color: gold;
+  border: 1px solid gainsboro;
+  font-family: monospace;
+}
+
+.flash-sale span {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+  color: gold;
+  font-style: oblique;
+  font-family: sans-serif;
+  display: contents;
+  line-height: 35px;
+  width: 266px;
+}
+
+/* Flash-Sale */
+.flash-sale {
+  /* display: grid; */
+  /* grid-template-columns: auto 381px; */
+  width: 80%;
+  margin: auto;
+  margin-bottom: 15px;
+  /* grid-gap: 15px */
+  /* justify-items: center; */
+}
+
+/* .flash-sale-img {
+  width: 100%;
+  height: 100%;
+} */
+
+.flash-sale-emoji {
+  width: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .countdown-container span {
+    font-size: 13px;
+  }
+  .flash-sale span {
+    font-size: 12px;
+  }
+  .flash-sale-emoji {
+    width: 15px;
+  }
 }

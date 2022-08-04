@@ -6,13 +6,8 @@ const closeCart = (e) => {
     document.querySelector('.cart-overlay').style.visibility = 'hidden'
     document.querySelector('.cart').style.transform = 'translateX(101%)'
   }
-  // const checkOutFormDiv = (a) => {
-  //   document.querySelector('.checkout-container').style.visibility = 'visible'
-  //   console.log('seen');
-  // }
 
 const cart = ({cartItems, AddToCart, RemoveFromCart, componentProps}) => {
-  //console.log(cartItems);
   const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
   const taxPrice = itemsPrice * 0.14;
   const shippingPrice = itemsPrice > 2000 ? 0 : 20;
@@ -45,10 +40,6 @@ const cart = ({cartItems, AddToCart, RemoveFromCart, componentProps}) => {
                 +
               </h2>
             </div>
-              
-            {/* <div className="col-2 text-right">
-              {item.qty} x ${item.price.toFixed(2)}
-            </div> */}
           </div>
         ))}
                 {cartItems.length !== 0 && (
@@ -81,9 +72,6 @@ const cart = ({cartItems, AddToCart, RemoveFromCart, componentProps}) => {
             <span className='proceed'>Kindly input your details to proceed</span><br/>
             <hr className='proceed-hr'/>
             <div className="checkout">
-              {/* <button className='checkout-btn'>
-                Checkout
-              </button> */}
             </div>
             <Payment totalPrice={totalPrice}/>
             

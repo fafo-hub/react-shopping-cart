@@ -6,13 +6,16 @@ import Cart from "./Components/cart"
 import Store from "./Components/store"
 import data from "./Components/data"
 import { useState } from 'react';
-import Payment from "./Components/payment"
+import Example from "./Components/example"
+
 
 
 
 const App = () => {
+  
   const { products } = data;
-  const [cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState([])
+  
 
   const AddToCart = (product) => {
     const exist = cartItems.find((x) => x.id === product.id);
@@ -40,14 +43,15 @@ const App = () => {
     }
     
   };
-
+  
+  
   return ( 
     <div className="div">
       <Navbars cartItems={cartItems}/>
       <Carousel />
+      <Example />
       <Cart cartItems={cartItems} AddToCart={AddToCart} RemoveFromCart={RemoveFromCart}/>
       <Store products = { products } AddToCart={AddToCart} />
-      <Payment />
         </div>
    );
 }
