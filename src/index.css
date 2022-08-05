@@ -17,6 +17,12 @@ code {
 
 .nav-container {
   background-color: rgba(0, 0, 0, 1)!important;
+  /* position: fixed!important; */
+}
+
+.cart-length {
+  position: relative;
+  top: -10px;
 }
 
 .navbar_container .navbar_a {
@@ -62,6 +68,41 @@ img .d-block .w-100 .carousel-img {
   color: gold;
   font-weight: 800;
 }
+/* Header */
+.header{
+  background-image: url("./Components/Images/pexels-r-fera-432059.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 75vh;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.header h1{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  color: #FFFFFF;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  width: 362px;
+}
+.header button{
+  /* width: 250px; */
+  padding: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  font-weight: 800;
+  border: 2px solid gold;
+  line-height: 20px;
+  background: unset;
+  color: antiquewhite;
+}
+/* Header */
 /* Products Section */
 
 .container-fluid {
@@ -379,7 +420,23 @@ img .d-block .w-100 .carousel-img {
 
 /* Countdown */
 .countdown-container {
-  display: grid;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 130%;
+    /* margin: auto; */
+    font-size: 30px;
+    font-style: italic;
+    justify-items: center;
+    color: white;
+    border: 1px solid gainsboro;
+    /* float: right; */
+    position: monospace;
+    /* position: relative;
+    top: -232px;
+    left: 40px; */
+    font-family: Montserrat;
+}
+  /* display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 72%;
   margin: auto;
@@ -388,9 +445,11 @@ img .d-block .w-100 .carousel-img {
   justify-items: center;
   color: gold;
   border: 1px solid gainsboro;
-  font-family: monospace;
-}
+  font-family: monospace; */
 
+.countdown-container span {
+  font-size: 25px;
+}
 .flash-sale span {
   width: 80%;
   margin: auto;
@@ -424,6 +483,9 @@ img .d-block .w-100 .carousel-img {
 }
 
 @media screen and (max-width: 768px) {
+  .countdown-container {
+    width: 100%;
+  }
   .countdown-container span {
     font-size: 13px;
   }

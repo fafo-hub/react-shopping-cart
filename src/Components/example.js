@@ -55,10 +55,10 @@ const Example = () => {
 
     return ( 
         <div className="Example">
-            <hr style={{ color: 'gold'} }/>
+            {/* <hr style={{ color: 'gold'} }/> */}
             <div className="flash-sale">
                 {/* <img className='flash-sale-img' src= {flashSale} alt="flash-sale" /> */}
-                <span>enjoy free delivery on items above $2000 <img className='flash-sale-emoji' src={flashSaleWebp} alt="" /></span>
+                {/* <span>enjoy free delivery on items above $2000 <img className='flash-sale-emoji' src={flashSaleWebp} alt="" /></span> */}
                 {/* <span><img src={flashSaleEmoji} alt="flash-sale-emoji" className="flash-sale-emoji" /></span> */}
             </div>
             <div className="countdown-container">
@@ -71,7 +71,7 @@ const Example = () => {
                 <span>Minutes</span>
                 <span>Seconds</span>
             </div>
-            <hr style={{ color: 'gold'} }/>
+            {/* <hr style={{ color: 'gold'} }/> */}
         </div>
      );
 }

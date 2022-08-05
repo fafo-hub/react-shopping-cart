@@ -5,7 +5,7 @@ import Navbars from "./Components/navbars"
 import Cart from "./Components/cart"
 import Store from "./Components/store"
 import data from "./Components/data"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Example from "./Components/example"
 
 
@@ -15,6 +15,14 @@ const App = () => {
   
   const { products } = data;
   const [cartItems, setCartItems] = useState([])
+  const [cartItemsCount, setCartItemCount] = useState(cartItems.length)
+
+  useEffect(() => {
+    if(cartItems.length > cartItemsCount) {
+      alert("Item added to cart");
+    }
+    setCartItemCount(cartItems.length);
+  }, [cartItems])
   
 
   const AddToCart = (product) => {
@@ -24,11 +32,11 @@ const App = () => {
         cartItems.map((x) =>
           x.id === product.id ? { ...exist, qty: exist.qty + 1 } : x
         )
-      ); alert('Item added to Cart')
+      );
     } else {
       setCartItems([...cartItems, { ...product, qty: 1 }]);
     }
-    console.log();
+    console.log(cartItems);
   };
   const RemoveFromCart = (product) => {
     const exist = cartItems.find((x) => x.id === product.id);
@@ -49,7 +57,7 @@ const App = () => {
     <div className="div">
       <Navbars cartItems={cartItems}/>
       <Carousel />
-      <Example />
+      {/* <Example /> */}
       <Cart cartItems={cartItems} AddToCart={AddToCart} RemoveFromCart={RemoveFromCart}/>
       <Store products = { products } AddToCart={AddToCart} />
         </div>
