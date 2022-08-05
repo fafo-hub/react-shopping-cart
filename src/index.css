@@ -107,10 +107,10 @@ img .d-block .w-100 .carousel-img {
 
 @media screen and (max-width: 576px) {
   .header {
-    height:65vh;
+    height:60vh;
   }
   .header button {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 }
 /* Header */
