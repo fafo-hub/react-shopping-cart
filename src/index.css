@@ -20,9 +20,11 @@ code {
   /* position: fixed!important; */
 }
 
+
 .cart-length {
   position: relative;
   top: -10px;
+  color: goldenrod;
 }
 
 .navbar_container .navbar_a {
@@ -101,6 +103,15 @@ img .d-block .w-100 .carousel-img {
   line-height: 20px;
   background: unset;
   color: antiquewhite;
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    height:65vh;
+  }
+  .header button {
+    margin-top: 20px;
+  }
 }
 /* Header */
 /* Products Section */
