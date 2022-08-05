@@ -79,7 +79,7 @@ img .d-block .w-100 .carousel-img {
   height: 75vh;
   width: 100%;
   margin-bottom: 50px;
-  border: 1px dotted goldenrod;
+  border-bottom: 1px dotted goldenrod;
 }
 .header h1{
   font-family: Montserrat;
