@@ -6,8 +6,6 @@ import Cart from "./Components/cart"
 import Store from "./Components/store"
 import data from "./Components/data"
 import { useState, useEffect } from 'react';
-import Example from "./Components/example"
-
 
 
 
@@ -19,7 +17,7 @@ const App = () => {
 
   useEffect(() => {
     if(cartItems.length > cartItemsCount) {
-      alert("Item added to cart");
+      // alert("Item added to cart");
     }
     setCartItemCount(cartItems.length);
   }, [cartItems])
@@ -57,7 +55,6 @@ const App = () => {
     <div className="div">
       <Navbars cartItems={cartItems}/>
       <Carousel />
-      {/* <Example /> */}
       <Cart cartItems={cartItems} AddToCart={AddToCart} RemoveFromCart={RemoveFromCart}/>
       <Store products = { products } AddToCart={AddToCart} />
         </div>

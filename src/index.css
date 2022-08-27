@@ -36,30 +36,6 @@ img .d-block .w-100 .carousel-img {
   height: inherit!important;
 }
 
-.carousel-item {
-  background: url('./Components/Images/th.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 350px!important;
-}
-
-.item2 {
-  background: url('./Components/Images/pexels-artem-beliaikin-2292953.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 65vh;
-}
-
-.item3 {
-  background: url('./Components/Images/pexels-ksenia-chernaya-3951790.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 65vh;
-}
-
 .nav-links {
   color: gold!important;
 } 
@@ -116,6 +92,13 @@ img .d-block .w-100 .carousel-img {
   }
 }
 /* Header */
+
+
+/* Modal */
+.modal-body .emoji {
+  width: 25px!important;
+  height: 35px!important;
+}
 /* Products Section */
 
 .container-fluid {
@@ -509,3 +492,4 @@ img .d-block .w-100 .carousel-img {
     width: 15px;
   }
 }
+

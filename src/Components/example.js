@@ -1,8 +1,6 @@
 import React from 'react';
 import {useRef, useState, useEffect} from 'react'
-import flashSale from "./Images/flash-sales.jpg"
-import flashSaleEmoji from "./Images/15-155546_emoji-svg-happy-face-svg-happy-birthday-sister.png"
-import flashSaleWebp from "./Images/4_grande.webp"
+
 
 const Example = () => {
     const [daysTimer, setDaysTimer] = useState('00')
@@ -45,7 +43,7 @@ const Example = () => {
   }
         }, 1000)
     }
-    //componentDidMount
+    
     useEffect(() => {
         countDown();
         return() =>{
@@ -55,12 +53,6 @@ const Example = () => {
 
     return ( 
         <div className="Example">
-            {/* <hr style={{ color: 'gold'} }/> */}
-            <div className="flash-sale">
-                {/* <img className='flash-sale-img' src= {flashSale} alt="flash-sale" /> */}
-                {/* <span>enjoy free delivery on items above $2000 <img className='flash-sale-emoji' src={flashSaleWebp} alt="" /></span> */}
-                {/* <span><img src={flashSaleEmoji} alt="flash-sale-emoji" className="flash-sale-emoji" /></span> */}
-            </div>
             <div className="countdown-container">
                 <span>{daysTimer}</span>
                 <span>{hoursTimer}</span>
@@ -71,7 +63,6 @@ const Example = () => {
                 <span>Minutes</span>
                 <span>Seconds</span>
             </div>
-            {/* <hr style={{ color: 'gold'} }/> */}
         </div>
      );
 }

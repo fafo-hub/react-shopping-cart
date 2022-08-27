@@ -21,7 +21,6 @@ const Payment = ({totalPrice}) => {
       text: "Pay Now",
       onSuccess: () =>
         alert("Thanks for doing business with us! Come back soon!!"),
-      onClose: () => alert("Wait! Don't leave :("),
     }
     return ( 
         <div className="">
