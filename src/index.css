@@ -118,9 +118,7 @@ img .d-block .w-100 .carousel-img {
 
 .card img {
   width: 90%!important;
-  height: 120px!important; 
-  /* padding-top: 15px; */
-  /* margin-bottom: 3px; */
+  height: 120px!important;
 }
 
 .card-body {
@@ -198,6 +196,7 @@ img .d-block .w-100 .carousel-img {
 
 
 /* Products Section */
+
 /* Cart and cart overlay */
 .cart-overlay {
   position: absolute;
@@ -228,8 +227,6 @@ img .d-block .w-100 .carousel-img {
 }
 
 .close-cart {
-  /* position: relative;
-  left: -200px; */
 	cursor: pointer;
 	font-size: 1.5rem;
  }
@@ -419,29 +416,16 @@ img .d-block .w-100 .carousel-img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 130%;
-    /* margin: auto; */
     font-size: 30px;
     font-style: italic;
     justify-items: center;
     color: white;
     border: 1px solid gainsboro;
-    /* float: right; */
     position: monospace;
-    /* position: relative;
-    top: -232px;
-    left: 40px; */
     font-family: Montserrat;
+    margin-top: 20px;
 }
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 72%;
-  margin: auto;
-  font-size: 30px;
-  font-style: italic;
-  justify-items: center;
-  color: gold;
-  border: 1px solid gainsboro;
-  font-family: monospace; */
+  
 
 .countdown-container span {
   font-size: 25px;
@@ -460,19 +444,11 @@ img .d-block .w-100 .carousel-img {
 
 /* Flash-Sale */
 .flash-sale {
-  /* display: grid; */
-  /* grid-template-columns: auto 381px; */
   width: 80%;
   margin: auto;
   margin-bottom: 15px;
-  /* grid-gap: 15px */
-  /* justify-items: center; */
 }
 
-/* .flash-sale-img {
-  width: 100%;
-  height: 100%;
-} */
 
 .flash-sale-emoji {
   width: 20px;
